@@ -1,0 +1,51 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrolling on the entire page */
+}
+
+.portfolio-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.left {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.right {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
